@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    background-color: #1e1e2f;
+    color: #d1d1e0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Sidebar */
+.stSidebar {
+    background: #222233;
+    border-right: 1px solid #444455;
+    transition: all 0.3s ease;
+}
+
+.stSidebar:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.stSidebar h2,
+.stSidebar h3,
+.stSidebar p {
+    color: #d1d1e0;
+}
+
+/* Sidebar Radio Buttons */
+.stRadio label {
+    font-weight: bold;
+    color: #b3b3cc;
+    transition: color 0.2s ease;
+}
+
+.stRadio label:hover {
+    color: #fff;
+}
+
+/* Active Sidebar Item */
+.stRadio input[type="radio"]:checked+label {
+    color: #66ccff;
+    border-left: 4px solid #66ccff;
+    background: rgba(102, 204, 255, 0.1);
+    padding-left: 10px;
+}
+
+/* Chatbot Page */
+.chatbot-container {
+    background: #29293d;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-container h1 {
+    color: #66ccff;
+}
+
+.chatbot-container .stTextInput input {
+    border: 1px solid #444455;
+    background: #1e1e2f;
+    color: #d1d1e0;
+    border-radius: 25px;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.chatbot-container .stTextInput input:focus {
+    border-color: #66ccff;
+    box-shadow: 0 0 8px rgba(102, 204, 255, 0.5);
+    outline: none;
+}
+
+/* Chat Messages */
+.chat-message {
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    transition: transform 0.2s ease;
+}
+
+.chat-message.user {
+    background: #4d4d66;
+    color: #fff;
+    text-align: right;
+    margin-left: auto;
+    animation: slideInUser 0.3s ease;
+}
+
+.chat-message.bot {
+    background: #33334d;
+    color: #b3b3cc;
+    text-align: left;
+    animation: slideInBot 0.3s ease;
+}
+
+.chat-message:hover {
+    transform: scale(1.02);
+}
+
+/* Animations */
+@keyframes slideInUser {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInBot {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Buttons */
+.stButton button {
+    background: linear-gradient(135deg, #66ccff, #6699ff);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.stButton button:hover {
+    background: linear-gradient(135deg, #6699ff, #66ccff);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Logout Button */
+.stButton button.logout {
+    background: #ff4d4d;
+    border-radius: 15px;
+    transition: background 0.3s ease;
+}
+
+.stButton button.logout:hover {
+    background: #ff1a1a;
+    box-shadow: 0 6px 12px rgba(255, 26, 26, 0.3);
+}
