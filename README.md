@@ -3,12 +3,27 @@
 ## Overview
 This project is a Power BI analysis of Indian GDP data across various cities, focusing on trends such as employment, unemployment, and other economic indicators. The dashboard includes interactive visualizations to help users explore economic patterns and insights. The project has been deployed using Streamlit for easy accessibility.
 
+![GDP Banner](assets/dashboard-1.png)
+
 ## Features
 - **Interactive Dashboards**: Explore GDP trends with filters for cities, years, and economic sectors.
 - **Data Visualization**: Dynamic charts, graphs, and heatmaps for intuitive analysis.
 - **Comparative Analysis**: Compare GDP performance across multiple cities and regions.
 - **Time-Series Analysis**: Track GDP growth trends over different time periods.
 - **Insights & Recommendations**: Extract meaningful insights based on data patterns.
+
+![home-page](assets/homepage-1.png)
+
+![about-page](assets/aboutpage-1.png)
+
+![dashboard-page](assets/dashboard-1.png)
+
+![insights-page](assets/insightspage.png)
+
+![chatbot-page](assets/chatbotPage.png)
+
+
+
 
 ## Data Sources
 - **Government GDP Reports**
